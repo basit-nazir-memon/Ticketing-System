@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="820.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="14.0" layoutY="45.0" prefHeight="35.0" prefWidth="211.0" text="Request Support" textAlignment="CENTER" textFill="#343e7c">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Pane layoutX="166.0" layoutY="97.0" prefHeight="355.0" prefWidth="487.0" style="-fx-background-color: WHite; -fx-background-radius: 10px; -fx-border-color: #343e7c; -fx-border-radius: 10px;">
+         <children>
+            <Label layoutX="14.0" layoutY="8.0" prefHeight="35.0" prefWidth="125.0" text="Question Topic" textAlignment="CENTER" textFill="#343e7c">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ComboBox layoutX="14.0" layoutY="41.0" prefHeight="25.0" prefWidth="457.0" style="-fx-background-color: WHITE; -fx-border-color: #343e7c; -fx-border-radius: 5px;" />
+            <Label layoutX="14.0" layoutY="75.0" prefHeight="35.0" prefWidth="152.0" text="Question" textAlignment="CENTER" textFill="#343e7c">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextArea layoutX="14.0" layoutY="106.0" prefHeight="178.0" prefWidth="457.0" promptText="Write your Question / Issue here" style="-fx-background-color: White; -fx-border-color: #343e7c; -fx-border-radius: 5px; -fx-background-radius: 5px;" />
+            <Button layoutX="321.0" layoutY="310.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="152.0" style="-fx-background-color: WHITE; -fx-border-color: #ed7d29; -fx-background-color: #ed7d29; -fx-background-radius: 10px; -fx-border-radius: 10px;" text="Request Support" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Label layoutX="14.0" layoutY="281.0" prefHeight="35.0" prefWidth="152.0" text="Error" textAlignment="CENTER" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Button layoutX="5.0" layoutY="7.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="69.0" style="-fx-background-color: WHITE; -fx-border-color: #ed7d29; -fx-background-color: #ed7d29; -fx-background-radius: 10px; -fx-border-radius: 10px;" text="Back" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
