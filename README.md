@@ -132,7 +132,7 @@ If you would like to contribute to this project, please follow the guidelines me
 
 ## License
 
-This project is licensed under the CFT license.
+This project is licensed under the GNU v.3 license.
 
 
 
