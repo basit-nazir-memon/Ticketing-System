@@ -1,18 +1,14 @@
 CREATE DATABASE sdaProject;
 USE sdaProject;
 
-DROP TABLE Reservation;
-DROP TABLE Campaigns;
-DROP TABLE Coupons;
-DROP TABLE Events;
-DROP TABLE UserAccount;
-DROP TABLE User;
-DROP TABLE SupportTable;
-DROP TABLE Messages;
-
-
-
-
+DROP TABLE IF EXISTS Reservation;
+DROP TABLE IF EXISTS Campaigns;
+DROP TABLE IF EXISTS Coupons;
+DROP TABLE IF EXISTS Events;
+DROP TABLE IF EXISTS UserAccount;
+DROP TABLE IF EXISTS User;
+DROP TABLE IF EXISTS SupportTable;
+DROP TABLE IF EXISTS Messages;
 
 CREATE TABLE User(
 	id INT AUTO_INCREMENT PRIMARY KEY,
@@ -36,13 +32,9 @@ CREATE TABLE UserAccount (
     FOREIGN KEY (user_id) REFERENCES User(id)
 );
 
-
 CREATE TABLE UserAccount(
-	
 	securityQuestion VARCHAR(255)
 );
-
-
 
 CREATE TABLE events (
   id INT PRIMARY KEY AUTO_INCREMENT,
@@ -123,17 +115,6 @@ CREATE TABLE Messages (
     CONSTRAINT FK_SupportTable FOREIGN KEY (SupportTableId) REFERENCES SupportTable(id)
 );
 
-
-
-
-
-
-DROP TABLE coupons
-DROP TABLE campaigns
-    
-    SELECT * FROM USER
-    SELECT * FROM USERACCOUNT
-    
     
 INSERT INTO User (first_name, last_name, username, password, role, dob, email, gender, tAndC, isActive) VALUES ('Basit', 'Nazir', 'support', 'support', 'Support Team', '2003-07-04', 'basitnazir03@yahoo.com', 'Male', true, true);
 
@@ -155,22 +136,3 @@ VALUES
   ('Event 3', '2023-06-03', '18:00:00', 'Location 3', 'Description 3', 'picture3.jpg', 200, 15),
   ('Event 4', '2023-06-04', '12:30:00', 'Location 4', 'Description 4', 'picture4.jpg', 50, 25),
   ('Event 5', '2023-06-05', '20:00:00', 'Location 5', 'Description 5', 'picture5.jpg', 80, 12);
-
-
-
-UPDATE RESERVATION SET NAME = 'BCA' WHERE id = 2
-select*from RESERVATION;
-select*from Coupons;
-select*from Campaigns;
-select*from SupportTable;
-select*from Messages;
-
-
-select *  from events
-
-DROP TABLE EVENTS
-DROP TABLE RESERVATION
-
-DELETE FROM SupportTable
-DELETE FROM Messages
-DROP TABLE EVENTS
