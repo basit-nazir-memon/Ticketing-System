@@ -1,4 +1,4 @@
--- CREATE DATABASE sdaProject;
+CREATE DATABASE sdaProject;
 USE sdaProject;
 
 DROP TABLE IF EXISTS Reservation;
