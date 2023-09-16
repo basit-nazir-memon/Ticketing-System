@@ -1,4 +1,4 @@
-CREATE DATABASE sdaProject;
+-- CREATE DATABASE sdaProject;
 USE sdaProject;
 
 DROP TABLE IF EXISTS Reservation;
@@ -6,9 +6,10 @@ DROP TABLE IF EXISTS Campaigns;
 DROP TABLE IF EXISTS Coupons;
 DROP TABLE IF EXISTS Events;
 DROP TABLE IF EXISTS UserAccount;
-DROP TABLE IF EXISTS User;
-DROP TABLE IF EXISTS SupportTable;
 DROP TABLE IF EXISTS Messages;
+DROP TABLE IF EXISTS SupportTable;
+DROP TABLE IF EXISTS User;
+
 
 CREATE TABLE User(
 	id INT AUTO_INCREMENT PRIMARY KEY,
@@ -30,10 +31,6 @@ CREATE TABLE UserAccount (
     answer VARCHAR(255),
     user_id INT,
     FOREIGN KEY (user_id) REFERENCES User(id)
-);
-
-CREATE TABLE UserAccount(
-	securityQuestion VARCHAR(255)
 );
 
 CREATE TABLE events (
@@ -115,8 +112,6 @@ CREATE TABLE Messages (
     CONSTRAINT FK_SupportTable FOREIGN KEY (SupportTableId) REFERENCES SupportTable(id)
 );
 
-    
-INSERT INTO User (first_name, last_name, username, password, role, dob, email, gender, tAndC, isActive) VALUES ('Basit', 'Nazir', 'support', 'support', 'Support Team', '2003-07-04', 'basitnazir03@yahoo.com', 'Male', true, true);
 
 INSERT INTO USER (first_name, last_name, username, password, role, dob, email, gender, tAndC, isActive)
 VALUES
